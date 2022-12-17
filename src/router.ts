@@ -16,6 +16,6 @@ const BASE_URL = configuration.api.baseUrl
 const router = new Router()
 
 // add all of the routes
-router.get(`${BASE_URL}/v1/auth`, authController.index)
+router.get(`/v1/auth/email-password`, authController.authEmailPass)
 
 export default router
